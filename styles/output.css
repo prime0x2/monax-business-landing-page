@@ -1002,6 +1002,16 @@ footer a{
   .subscribe__inputGroup{
     width: 100%;
   }
+
+  .subscribe__inputGroup{
+    flex-direction: column;
+  }
+
+  .subscribe__inputGroup > :not([hidden]) ~ :not([hidden]){
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+  }
 }
 
 .subscribe__inputGroup input{
@@ -1035,6 +1045,16 @@ footer a{
   outline-offset: 2px;
 }
 
+@media (max-width: 680px){
+  .subscribe__inputGroup input{
+    flex: none;
+  }
+
+  .subscribe__inputGroup input{
+    border-radius: 0.25rem;
+  }
+}
+
 .subscribe__inputGroup button{
   height: 2.75rem;
   background-color: rgb(74 222 128 / 0.8);
@@ -1045,6 +1065,12 @@ footer a{
   font-weight: 500;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (max-width: 680px){
+  .subscribe__inputGroup button{
+    border-radius: 0.25rem;
+  }
 }
 
 /* ----------------- Fifth Section ----------------- */
