@@ -1064,6 +1064,10 @@ footer a{
   .subscribe__inputGroup input{
     border-radius: 0.25rem;
   }
+
+  .subscribe__inputGroup input{
+    text-align: center;
+  }
 }
 
 .subscribe__inputGroup button{
