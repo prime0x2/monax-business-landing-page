@@ -724,6 +724,17 @@ footer a{
   --tw-shadow: var(--tw-shadow-colored);
 }
 
+@media (max-width: 680px){
+  .header__title-subscribe{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .header__title-subscribe{
+    width: 90%;
+  }
+}
+
 .header__title-subscribe input{
   height: 2.5rem;
   width: 100%;
